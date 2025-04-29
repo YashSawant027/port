@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Webstite</title>
+    <link rel="stylesheet" href="port.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav>
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <div class="logo">YS</div>
+            </div>
+            <div class="nav-obj">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Conatct</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="hideSlideBar()"></i>
+        </div>
+        <div class="res-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Conatct</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- main  -->
+    <main>
+        <div class="main-cont">
+            <!-- MY intro -->
+            <div class="my-info">
+                <p class="p1 info">Hii, I am</p>
+                <p class="p2 info">Yash Sawant</p>
+                <span id="element"></span>
+                <p class="p3 p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, iusto corporis animi
+                    necessitatibus consequatur libero eos dolores accusamus sed distinctio eveniet ab eaque a
+                    temporibus?</p>
+                <div class="main-logos">
+                    <i class="fa-brands fa-instagram Ilogos"></i>
+                    <i class="fa-brands fa-twitter Ilogos"></i>
+                    <i class="fa-brands fa-facebook Ilogos"></i>
+                    <i class="fa-brands fa-linkedin Ilogos"></i>
+                </div>
+            </div>
+            <!-- My Image -->
+            <div class="my-image">
+                <div class="image"></div>
+            </div>
+        </div>
+        <!-- My Experience Bar -->
+        <div class="about-cont">
+            <div class="abt-icon">
+                <i class="fa-solid fa-medal lg"></i>
+                <div class="abt">
+                    <p class="years">3 Years Job</p>
+                    <p class="comp">Experience</p>
+                </div>
+            </div>
+            <div class="abt-icon">
+                <i class="fa-solid fa-clipboard lg"></i>
+                <div class="abt">
+                    <p class="Proj">10+ Projects</p>
+                    <p class="comp">Completed</p>
+                </div>
+            </div>
+            <div class="abt-icon">
+                <i class="fa-solid fa-headset"></i>
+                <div class="abt">
+                    <p class="supp">Support</p>
+                    <p class="comp">Online 24*7</p>
+                </div>
+            </div>
+        </div>
+        <!-- About Me -->
+        <div class="abt-me">
+            <div class="abt-img">
+                <div class="img"></div>
+            </div>
+            <div class="abt-cont">
+                <p class="intro">My Intro</p>
+                <p class="me">About Me</p><br>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum totam obcaecati
+                    voluptate dolore maiores ipsa deserunt, libero debitis. Consequatur quisquam possimus fugit at
+                    consequuntur nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, corrupti.</p>
+                <br><br>
+                <div class="temp">
+                    <div class="name">
+                        <i class="fa-solid fa-face-smile"></i>
+                        <p><span>Name : </span>Yash Shankar Sawant</p><br><br>
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <p><span>Phone : </span>9082258820</p><br><br>
+                    </div>
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p><span>Email : </span>yashsawan70@gmail.com</p><br><br><br>
+                    </div>
+                </div>
+                <p class="intrest">My Interests</p><br>
+                <div class="myint">
+                    <i class="fa-solid fa-music"></i>
+                    <p>Music</p>
+                    <i class="fa-solid fa-bicycle"></i>
+                    <p>Cycling</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="contact-me">
+            <h2> Contact Info </h2>
+            <div class="flex-div">
+                <div class="left icons">
+                    <i class="fa-brands fa-instagram Ilogos il"></i>
+                    <i class="fa-brands fa-twitter Ilogos il"></i>
+                    <i class="fa-brands fa-facebook Ilogos il"></i>
+                    <i class="fa-brands fa-linkedin Ilogos il"></i>
+                </div>
+
+                <div class="right cont-main">
+                    <input type="text" placeholder="Your Name" class="bor"><br>
+                    <input type="text" placeholder="Email" class="bor"><br>
+                    <input type="text" placeholder="Your Subject" class="bor"><br>
+                    <input type="text" placeholder="Say Something" class="bor">
+                </div>
+            </div><input type="button" value="Send" class="btn">
+        </div>
+
+    </main>
+    <footer>
+        <div class="main-footer">
+            <div class="logo-fotter logo">YS</div class="logo-fotter logo">
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'AI Developer', 'APP Developer'],
+            typeSpeed: 45,
+            backSpeed: 30,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
